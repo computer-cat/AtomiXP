@@ -1,8 +1,8 @@
-# AtomiXP &nbsp; [![bluebuild build badge](https://github.com/sylvie00/atomixp/actions/workflows/build.yml/badge.svg)](https://github.com/sylvie00/atomixp/actions/workflows/build.yml)
+# AtomiXP &nbsp; [![bluebuild build badge](https://github.com/computer-cat/atomixp/actions/workflows/build.yml/badge.svg)](https://github.com/computer-cat/atomixp/actions/workflows/build.yml)
 
 AtomiXP is an experimental ublue image with XFCE and the latest build of xfce-winxp-tc prebuilt. Primarily made for personal use, but you're welcome to try it. Expect bugs and X11 related issues.
 
-<img width="1280" height="800" alt="image" src="https://github.com/Sylvie00/AtomiXP/blob/main/assets/screenshot.png?raw=true" />
+<img width="1280" height="800" alt="image" src="https://github.com/computer-cat/AtomiXP/blob/main/assets/screenshot.png?raw=true" />
 
 ## Features
 
@@ -22,7 +22,7 @@ To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/sylvie00/atomixp:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/computer-cat/atomixp:latest
   ```
 - Reboot to complete the rebase:
   ```
@@ -30,7 +30,7 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/sylvie00/atomixp:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/computer-cat/atomixp:latest
   ```
 - Reboot again to complete the installation
   ```
@@ -59,5 +59,5 @@ Will be provided when ready
 These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
 
 ```bash
-cosign verify --key cosign.pub ghcr.io/sylvie00/atomixp
+cosign verify --key cosign.pub ghcr.io/computer-cat/atomixp
 ```
