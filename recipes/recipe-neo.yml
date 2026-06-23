@@ -31,7 +31,6 @@ modules:
         - pavucontrol
         - fastfetch
         - xfce4-terminal
-        - adwaita-gtk2-theme
         - alsa-utils
         - blueman
         - gtk-xfce-engine
@@ -44,8 +43,6 @@ modules:
         - xscreensaver-extras
         - xscreensaver-extras-gss
         - qt6ct
-        - wine-tahoma-fonts
-        - menulibre
         - mesa-vulkan-drivers
         - mesa-dri-drivers
         - mesa-libGL
