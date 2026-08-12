@@ -1,7 +1,7 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
-name: atomixp-wl
+name: atomixp-testing
 # description will be included in the image's metadata
 description: Experimental bluebuild image with XFCE aiming to create an "XP" like experience.
 
@@ -47,7 +47,6 @@ modules:
         - mesa-dri-drivers
         - mesa-libGL
         - plymouth-plugin-script
-        - labwc
 
   - type: rpm-ostree
     repos:
@@ -78,6 +77,7 @@ modules:
         scope: system
         install:
         - io.github.kolunmi.Bazaar
+        - com.valvesoftware.Steam
         - com.github.tchx84.Flatseal
 
   - type: initramfs
